@@ -16,6 +16,17 @@ const Navbar = () => {
         setNav(!nav);
     };
 
+    useEffect(() => {
+        const handleShadow = () => {
+            if (window.scrollY >= 90) {
+                setShadow(true);
+            } else {
+                setShadow(false);
+            }
+        };
+        window.addEventListener('scroll', handleShadow);
+    }, []);
+
     return (
         <div
             style={{ backgroundColor: `${navBg}` }}
