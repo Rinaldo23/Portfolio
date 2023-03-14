@@ -12,13 +12,14 @@ import TAILWIND from '../public/assets/skills/tailwind.png'
 import NEXT from '../public/assets/skills/nextjs.png'
 import GITHUB from '../public/assets/skills/github.png'
 import MYSQL from '../public/assets/skills/MySql.png'
+import Image from 'next/image';
 
 const Skills = () => {
     return (
-        <div id='skills' className='w-full lg:h-screen p-2'>
+        <div id='skills' className='w-full lg:h-screen p-2 dark:bg-gray-600'>
             <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
-                <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Skills</p>
-                <h2 className='py-4'>What I Can Do</h2>
+                <p className='text-xl tracking-widest uppercase text-[#5651e5] dark:text-white'>Skills</p>
+                <h2 className='py-4 dark:text-[#a6b595]'>What I Can Do</h2>
 
                 <div className='grid grid-cols-2 lg:grid-cols-4 gap-8'>
 

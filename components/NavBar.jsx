@@ -3,23 +3,25 @@ import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { BsFillPersonLinesFill, BsToggleOn, BsToggleOff } from 'react-icons/bs';
 import NavLogo from '../public/assets/NavLogo.jpg'
 import { useRouter } from 'next/router';
 
-const Navbar = () => {
+const Navbar = ({ darkMode, setDarkMode }) => {
     const [nav, setNav] = useState(false);
     const [shadow, setShadow] = useState(false);
     const [navBg, setNavBg] = useState('#ecf0f3');
     const [linkColor, setLinkColor] = useState('#1f2937');
     const [logo, setLogo] = useState(true);
-
+    const router = useRouter();
 
     const handleNav = () => {
         setNav(!nav);
     };
 
-    const router = useRouter();
+    const handleDarkMode = () => {
+        setDarkMode(!darkMode);
+    }
 
     useEffect(() => {
         if (
@@ -38,7 +40,7 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleShadow = () => {
-            if (window.scrollY >= 90) {
+            if (window.scrollY >= 1) {
                 setShadow(true);
             } else {
                 setShadow(false);
@@ -49,11 +51,10 @@ const Navbar = () => {
 
     return (
         <div
-            style={{ backgroundColor: `${navBg}` }}
             className={
                 shadow
-                    ? 'fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300'
-                    : 'fixed w-full h-20 z-[100]'
+                    ? `fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300 bg-[${navBg}] dark:bg-gray-900`
+                    : `fixed w-full h-20 z-[100] bg-[${navBg}] dark:bg-gray-900`
             }
         >
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16 '>
@@ -63,12 +64,15 @@ const Navbar = () => {
                             src={NavLogo}
                             width='80'
                             height='30'
-                            className='cursor-pointer mix-blend-color-burn '
+                            className='cursor-pointer mix-blend-color-burn dark:mix-blend-plus'
                         /> : ""
                     }
                 </Link>
                 <div>
-                    <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
+                    <ul className={`hidden md:flex items-center ${linkColor} dark:text-white`}>
+                        <li onClick={()=>handleDarkMode()} className='ml-10 '>
+                            {darkMode ? <BsToggleOn size={28} /> : <BsToggleOff size={28} />}
+                        </li>
                         <li className='ml-10 text-sm uppercase hover:border-b'>
                             <Link href='/'>Home</Link>
                         </li>
@@ -80,9 +84,6 @@ const Navbar = () => {
                         </li>
                         <li className='ml-10 text-sm uppercase hover:border-b'>
                             <Link href='/#projects'>Projects</Link>
-                        </li>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>
-                            <Link href='/resume'>Resume</Link>
                         </li>
                         <li className='ml-10 text-sm uppercase hover:border-b'>
                             <Link href='/#contact'>Contact</Link>
