@@ -4,17 +4,37 @@ import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import NavLogo from '../../public/assets/NavLogo.jpg'
+import NavLogo from '../public/assets/NavLogo.jpg'
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     const [shadow, setShadow] = useState(false);
     const [navBg, setNavBg] = useState('#ecf0f3');
     const [linkColor, setLinkColor] = useState('#1f2937');
+    const [logo, setLogo] = useState(true);
+
 
     const handleNav = () => {
         setNav(!nav);
     };
+
+    const router = useRouter();
+
+    useEffect(() => {
+        if (
+            router.asPath === '/youtubeclone' ||
+            router.asPath === '/imdbclone'
+        ) {
+            setNavBg('transparent');
+            setLinkColor('#ecf0f3');
+            setLogo(false);
+        } else {
+            setNavBg('#ecf0f3');
+            setLinkColor('#1f2937');
+            setLogo(true);
+        }
+    }, [router]);
 
     useEffect(() => {
         const handleShadow = () => {
@@ -38,12 +58,14 @@ const Navbar = () => {
         >
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16 '>
                 <Link href='/'>
-                    <Image
-                        src={NavLogo}
-                        width='80'
-                        height='30'
-                        className='cursor-pointer mix-blend-color-burn '
-                    />
+                    {
+                        logo ? <Image
+                            src={NavLogo}
+                            width='80'
+                            height='30'
+                            className='cursor-pointer mix-blend-color-burn '
+                        /> : ""
+                    }
                 </Link>
                 <div>
                     <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
