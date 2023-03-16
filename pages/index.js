@@ -4,8 +4,10 @@ import Contact from '../components/Contact'
 import Main from '../components/Main'
 import Projects from '../components/Projects'
 import Skills from '../components/Skills'
+import Navbar from '@/components/NavBar'
 
 export default function Home({ darkMode, setDarkMode }) {
+  
   return (
     <>
       <Head>
@@ -14,7 +16,8 @@ export default function Home({ darkMode, setDarkMode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Main darkMode={darkMode} setDarkMode={setDarkMode} />
+      <Navbar darkMode={darkMode} setDarkMode={setDarkMode}/>
+      <Main />
       <About />
       <Skills />
       <Projects />

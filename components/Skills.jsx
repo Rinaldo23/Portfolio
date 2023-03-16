@@ -1,6 +1,7 @@
 import React from 'react';
 import SkillItem from './SkillItem';
 import HTML from '../public/assets/skills/html.png'
+import HTMLDARK from '../public/assets/skills/htmldark.png'
 import CSS from '../public/assets/skills/css.png'
 import JAVASCRIPT from '../public/assets/skills/javascript.png'
 import REACT from '../public/assets/skills/react.png'
@@ -12,18 +13,17 @@ import TAILWIND from '../public/assets/skills/tailwind.png'
 import NEXT from '../public/assets/skills/nextjs.png'
 import GITHUB from '../public/assets/skills/github.png'
 import MYSQL from '../public/assets/skills/MySql.png'
-import Image from 'next/image';
 
 const Skills = () => {
     return (
-        <div id='skills' className='w-full lg:h-screen p-2 dark:bg-gray-600'>
+        <div id='skills' className='w-full lg:h-screen p-2 dark:bg-gray-700 z-10'>
             <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
                 <p className='text-xl tracking-widest uppercase text-[#5651e5] dark:text-white'>Skills</p>
                 <h2 className='py-4 dark:text-[#a6b595]'>What I Can Do</h2>
 
-                <div className='grid grid-cols-2 lg:grid-cols-4 gap-8'>
+                <div className='grid grid-cols-2 lg:grid-cols-4 gap-8 '>
 
-                    <SkillItem Img={HTML} Name="HTML" />
+                    <SkillItem Img={HTMLDARK} Name="HTML" />
                     <SkillItem Img={CSS} Name="CSS" />
                     <SkillItem Img={JAVASCRIPT} Name="JAVASCRIPT" />
                     <SkillItem Img={REACT} Name="REACT" />

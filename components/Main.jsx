@@ -22,32 +22,32 @@ const Main = () => {
                     </p>
                     <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
                         <a
-                            href=''
+                            href='https://www.linkedin.com/in/rinaldo-badigar-65a85819b/'
                             target='_blank'
                             rel='noreferrer'
                         >
-                            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white hover:dark:bg-indigo-200'>
+                            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:bg-indigo-200 hover:scale-110 ease-in duration-300 dark:bg-white hover:dark:bg-indigo-200'>
                                 <FaLinkedinIn />
                             </div>
                         </a>
                         <a
-                            href=''
+                            href='https://github.com/Rinaldo23'
                             target='_blank'
                             rel='noreferrer'
                         >
-                            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300
+                            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:bg-indigo-200 hover:scale-110 ease-in duration-300
                             dark:bg-white hover:dark:bg-indigo-200'>
                                 <FaGithub />
                             </div>
                         </a>
                         <Link href='/#contact'>
-                            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300
+                            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:bg-indigo-200 hover:scale-110 ease-in duration-300
                             dark:bg-white hover:dark:bg-indigo-200'>
                                 <AiOutlineMail />
                             </div>
                         </Link>
                         <Link href='/resume'>
-                            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300
+                            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:bg-indigo-200 hover:scale-110 ease-in duration-300
                             dark:bg-white hover:dark:bg-indigo-200'>
                                 <BsFillPersonLinesFill />
                             </div>

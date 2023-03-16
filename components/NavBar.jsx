@@ -62,6 +62,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                     {
                         logo ? <Image
                             src={NavLogo}
+                            alt='/'
                             width='80'
                             height='30'
                             className='cursor-pointer mix-blend-color-burn dark:mix-blend-plus'
@@ -178,7 +179,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                             </p>
                             <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                                 <a
-                                    href='https://www.linkedin.com/in/clint-briley-50056920a/'
+                                    href='https://www.linkedin.com/in/rinaldo-badigar-65a85819b/'
                                     target='_blank'
                                     rel='noreferrer'
                                 >
@@ -187,7 +188,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                                     </div>
                                 </a>
                                 <a
-                                    href='https://github.com/fireclint'
+                                    href='https://github.com/Rinaldo23'
                                     target='_blank'
                                     rel='noreferrer'
                                 >

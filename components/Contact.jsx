@@ -40,7 +40,7 @@ const Contact = () => {
                                         target='_blank'
                                         rel='noreferrer'
                                     >
-                                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white hover:dark:bg-indigo-200'>
+                                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:bg-indigo-200 hover:scale-110 ease-in duration-300 dark:bg-white hover:dark:bg-indigo-200'>
                                             <FaLinkedinIn />
                                         </div>
                                     </a>
@@ -49,16 +49,16 @@ const Contact = () => {
                                         target='_blank'
                                         rel='noreferrer'
                                     >
-                                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white hover:dark:bg-indigo-200'>
+                                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:bg-indigo-200 hover:scale-110 ease-in duration-300 dark:bg-white hover:dark:bg-indigo-200'>
                                             <FaGithub />
                                         </div>
                                     </a>
 
-                                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white hover:dark:bg-indigo-200'>
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:bg-indigo-200 hover:scale-110 ease-in duration-300 dark:bg-white hover:dark:bg-indigo-200'>
                                         <AiOutlineMail />
                                     </div>
                                     <Link href='/resume'>
-                                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-white hover:dark:bg-indigo-200'>
+                                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:bg-indigo-200 hover:scale-110 ease-in duration-300 dark:bg-white hover:dark:bg-indigo-200'>
                                             <BsFillPersonLinesFill />
                                         </div>
                                     </Link>
