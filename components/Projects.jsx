@@ -21,6 +21,18 @@ const Projects = () => {
             backgroundImg: "/../public/assets/projects/TodoApp.png",
             projectUrl: '/todo',
             tech: 'React'
+        },
+        {
+            title: 'File Manager',
+            backgroundImg: "/../public/assets/projects/FileManager.png",
+            projectUrl: '/filemanager',
+            tech: 'Node'
+        },
+        {
+            title: 'AirBnb Clone',
+            backgroundImg: "/../public/assets/projects/AirBnbClone.png",
+            projectUrl: '/airbnbclone',
+            tech: 'MERN'
         }
     ]
 
