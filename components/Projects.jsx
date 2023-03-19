@@ -84,7 +84,7 @@ const Projects = () => {
                         tech={projects[0].tech}
 
                     />
-                    <ProjectItem
+                    {/* <ProjectItem
                         title={projects[1].title}
                         backgroundImg={projects[1].backgroundImg}
                         projectUrl={projects[1].projectUrl}
@@ -111,7 +111,7 @@ const Projects = () => {
                         projectUrl={projects[4].projectUrl}
                         tech={projects[4].tech}
 
-                    />
+                    /> */}
 
                 </div>
             </div>
