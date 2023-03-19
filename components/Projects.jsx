@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import ProjectItem from './ProjectItem'
 import YouTubeClone from "../public/assets/projects/YouTubeClone.png"
+import IMDbClone from "../public/assets/projects/IMDbClone.png"
+import AirBnbClone from "../public/assets/projects/AirBnbClone.png"
+import TodoApp from "../public/assets/projects/TodoApp.png"
+import FileManager from "../public/assets/projects/FileManager.png"
 
 const Projects = () => {
 
@@ -85,34 +89,34 @@ const Projects = () => {
                         tech={projects[0].tech}
 
                     />
-                    {/* <ProjectItem
+                    <ProjectItem
                         title={projects[1].title}
-                        backgroundImg={projects[1].backgroundImg}
+                        backgroundImg={IMDbClone}
                         projectUrl={projects[1].projectUrl}
                         tech={projects[1].tech}
 
                     />
                     <ProjectItem
                         title={projects[2].title}
-                        backgroundImg={projects[2].backgroundImg}
+                        backgroundImg={AirBnbClone}
                         projectUrl={projects[2].projectUrl}
                         tech={projects[2].tech}
 
                     />
                     <ProjectItem
                         title={projects[3].title}
-                        backgroundImg={projects[3].backgroundImg}
+                        backgroundImg={TodoApp}
                         projectUrl={projects[3].projectUrl}
                         tech={projects[3].tech}
 
                     />
                     <ProjectItem
                         title={projects[4].title}
-                        backgroundImg={projects[4].backgroundImg}
+                        backgroundImg={FileManager}
                         projectUrl={projects[4].projectUrl}
                         tech={projects[4].tech}
 
-                    /> */}
+                    />
 
                 </div>
             </div>
