@@ -77,13 +77,13 @@ const Projects = () => {
                         ))
                     } */}
 
-                    <ProjectItem
+                    {<ProjectItem
                         title={projects[0].title}
                         backgroundImg={projects[0].backgroundImg}
                         projectUrl={projects[0].projectUrl}
                         tech={projects[0].tech}
 
-                    />
+                    />}
                     {/* <ProjectItem
                         title={projects[1].title}
                         backgroundImg={projects[1].backgroundImg}
