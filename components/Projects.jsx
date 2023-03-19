@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ProjectItem from './ProjectItem'
+import YouTubeClone from "../public/assets/projects/YouTubeClone.png"
 
 const Projects = () => {
 
@@ -77,13 +78,13 @@ const Projects = () => {
                         ))
                     } */}
 
-                    {<ProjectItem
+                    <ProjectItem
                         title={projects[0].title}
-                        backgroundImg={projects[0].backgroundImg}
+                        backgroundImg={YouTubeClone}
                         projectUrl={projects[0].projectUrl}
                         tech={projects[0].tech}
 
-                    />}
+                    />
                     {/* <ProjectItem
                         title={projects[1].title}
                         backgroundImg={projects[1].backgroundImg}
