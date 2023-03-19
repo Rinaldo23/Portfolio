@@ -6,7 +6,7 @@ const Projects = () => {
     let projects = [
         {
             title: 'YouTube Clone',
-            backgroundImg: "/../public/assets/projects/YouTubeClone.png",
+            backgroundImg: "/../public/assets/projects/YouTubeClone.PNG",
             projectUrl: '/youtubeclone',
             tech: 'MERN'
         },
