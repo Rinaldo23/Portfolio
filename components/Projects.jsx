@@ -6,31 +6,31 @@ const Projects = () => {
     let projects = [
         {
             title: 'YouTube Clone',
-            backgroundImg: "/../public/assets/projects/YouTubeClone.PNG",
+            backgroundImg: "../public/assets/projects/YouTubeClone.png",
             projectUrl: '/youtubeclone',
             tech: 'MERN'
         },
         {
             title: 'IMDb Clone',
-            backgroundImg: "/../public/assets/projects/IMDbClone.png",
+            backgroundImg: "../public/assets/projects/IMDbClone.png",
             projectUrl: '/imdbclone',
             tech: 'React'
         },
         {
             title: 'Todo App',
-            backgroundImg: "/../public/assets/projects/TodoApp.png",
+            backgroundImg: "../public/assets/projects/TodoApp.png",
             projectUrl: '/todo',
             tech: 'React'
         },
         {
             title: 'File Manager',
-            backgroundImg: "/../public/assets/projects/FileManager.png",
+            backgroundImg: "../public/assets/projects/FileManager.png",
             projectUrl: '/filemanager',
             tech: 'Node'
         },
         {
             title: 'AirBnb Clone',
-            backgroundImg: "/../public/assets/projects/AirBnbClone.png",
+            backgroundImg: "../public/assets/projects/AirBnbClone.png",
             projectUrl: '/airbnbclone',
             tech: 'MERN'
         }
